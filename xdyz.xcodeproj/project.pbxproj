@@ -11,6 +11,7 @@
 		218DA44E28E9AD580066F959 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218DA44D28E9AD580066F959 /* ContentView.swift */; };
 		218DA45028E9AD590066F959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 218DA44F28E9AD590066F959 /* Assets.xcassets */; };
 		218DA45328E9AD590066F959 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 218DA45228E9AD590066F959 /* Preview Assets.xcassets */; };
+		711B6C7C5752898A15B60ADF /* Pods_xdyz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761911F1B35CB225DB7907B9 /* Pods_xdyz.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,9 @@
 		218DA44D28E9AD580066F959 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		218DA44F28E9AD590066F959 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		218DA45228E9AD590066F959 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		761911F1B35CB225DB7907B9 /* Pods_xdyz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xdyz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83610CA7BA5899D5FEC8872A /* Pods-xdyz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xdyz.debug.xcconfig"; path = "Target Support Files/Pods-xdyz/Pods-xdyz.debug.xcconfig"; sourceTree = "<group>"; };
+		C4E291B85C5C7896518D1CFD /* Pods-xdyz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xdyz.release.xcconfig"; path = "Target Support Files/Pods-xdyz/Pods-xdyz.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				711B6C7C5752898A15B60ADF /* Pods_xdyz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +42,8 @@
 			children = (
 				218DA44A28E9AD580066F959 /* xdyz */,
 				218DA44928E9AD580066F959 /* Products */,
+				CF6B70505A7BE21AB23F065A /* Pods */,
+				8383EE8750E3C69FEC2D17D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		8383EE8750E3C69FEC2D17D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				761911F1B35CB225DB7907B9 /* Pods_xdyz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF6B70505A7BE21AB23F065A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83610CA7BA5899D5FEC8872A /* Pods-xdyz.debug.xcconfig */,
+				C4E291B85C5C7896518D1CFD /* Pods-xdyz.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 218DA45628E9AD5A0066F959 /* Build configuration list for PBXNativeTarget "xdyz" */;
 			buildPhases = (
+				8B96BFDD7A01C9597981D53B /* [CP] Check Pods Manifest.lock */,
 				218DA44428E9AD580066F959 /* Sources */,
 				218DA44528E9AD580066F959 /* Frameworks */,
 				218DA44628E9AD580066F959 /* Resources */,
+				77D2E884DD347EFD1A2AABDD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77D2E884DD347EFD1A2AABDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-xdyz/Pods-xdyz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-xdyz/Pods-xdyz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-xdyz/Pods-xdyz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B96BFDD7A01C9597981D53B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-xdyz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		218DA44428E9AD580066F959 /* Sources */ = {
@@ -261,6 +330,7 @@
 		};
 		218DA45728E9AD5A0066F959 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83610CA7BA5899D5FEC8872A /* Pods-xdyz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +360,7 @@
 		};
 		218DA45828E9AD5A0066F959 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4E291B85C5C7896518D1CFD /* Pods-xdyz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
